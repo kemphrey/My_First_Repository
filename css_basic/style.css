@@ -1,7 +1,8 @@
-/* Flexbox layout for the body and main containers */
+
 body {
     display: flex;
     flex-direction: column; /* Stack <header>, <main>, and <footer> vertically */
+    background-color: #fafafa;
   }
   
   main {
@@ -10,13 +11,72 @@ body {
     flex: auto; /* Allow <main> to take up available space */
   }
   
-  article {
-    flex: 2; /* Article takes up 2/3 of the width */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
-  }
   
   aside {
     flex: 1; /* Aside takes up 1/3 of the width */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border: 1px solid #ddd; /* Light gray border */
+  }
+/* Styling for the <article> tag */
+article {
+    flex: 2; /* Article takes up 2/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif; /* Custom font for the article */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    margin-bottom: 20px; /* Space below the article */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+  }
+    /* Logo styling */
+.logo {
+    font-size: 36px; /* Make the logo character bigger */
+    color: #333; /* Dark color for the logo */
+    margin-right: 10px; /* Space after the logo */
+    display: inline-block; /* Align it with the other list items */
+    vertical-align: middle; /* Align the logo vertically */
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: #333; /* Dark background color for the header */
+    color: white; /* White text for the header */
+    padding: 15px;
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  header ul li {
+    margin-left: 20px;
+  }
+  
+  header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header ul li a:hover {
+    text-decoration: underline;
+  }
+  /* Styling the footer */
+footer {
+    background-color: #333; /* Dark footer background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
   }
   
